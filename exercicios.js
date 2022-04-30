@@ -12,9 +12,9 @@ const dataPerson = (cpf, bornDate, postalCode) => {
   const postalCodeRegex = /([0-9]{5})([0-9]{3})/;
   const postalCodeFormatted = postalCode.replace(postalCodeRegex, '$1-$2');
   
-  return { 
-  	cpf: cpfFormatted, 
-    bornDate: dateFormatted, 
+  return {
+    cpf: cpfFormatted,
+    bornDate: dateFormatted,
     postalCode: postalCodeFormatted
   };
 };
